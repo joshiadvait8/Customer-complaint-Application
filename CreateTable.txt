@@ -1,0 +1,29 @@
+create table customer(
+custid int AUTO_INCREMENT,
+custname varchar(20),
+custaddr varchar(200),
+custtel varchar(10),
+custemail varchar(20),
+primary key (custid)
+);
+---------------------------------------------
+create table complain(
+compid int AUTO_INCREMENT,
+comptype varchar(20),
+compremark varchar(50),
+compstatus varchar(10),
+custid int,
+primary key (compid),
+foreign key (custid) references customer(custid)
+);
+-----------------------------------------------
+create table complaintlog(
+custid int,
+compid int,
+compdate timestamp
+);
+------------------------------------------------
+ALTER TABLE customer AUTO_INCREMENT=1;
+
+
+Alter table customer modify custid int AUTO_INCREMENT ;
