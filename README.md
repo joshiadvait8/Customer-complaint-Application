@@ -3,5 +3,6 @@
 ---------------------------------------
 
 ### Features
--Customer registation
--Complaint Registration
+- Customer registation
+- Complaint Registration
+
